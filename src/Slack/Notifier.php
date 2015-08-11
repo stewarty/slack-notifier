@@ -57,7 +57,7 @@ class Notifier
         $payload = $this->serializer->serialize($message, 'json');
 
         $request = $this->client->post(
-            '/services/hooks/incoming-webhook',
+            '',
             array(),
             $payload,
             array('debug' => $debug)

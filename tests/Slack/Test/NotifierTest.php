@@ -81,7 +81,7 @@ class NotifierTest extends \PHPUnit_Framework_TestCase
         $client->expects($this->once())
             ->method('post')
             ->with(
-                $this->equalTo('/services/hooks/incoming-webhook'),
+                $this->equalTo(''),
                 $this->anything(),
                 $this->equalTo($expectedDatas),
                 $this->anything()
