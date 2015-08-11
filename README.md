@@ -13,7 +13,7 @@
 ```php
 require __DIR__ . '/vendor/autoload.php';
 
-$client = new Slack\Client('your_team', 'your_token');
+$client = new Slack\Client('https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX');
 $slack = new Slack\Notifier($client);
 
 $message = new Slack\Message\Message('Hello world');
